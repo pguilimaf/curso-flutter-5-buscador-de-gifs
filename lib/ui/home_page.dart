@@ -35,6 +35,33 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Image.network(
+            "https://developers.giphy.com/static/img/dev-logo-lg.gif"),
+        centerTitle: true,
+      ),
+      backgroundColor: Colors.black,
+      body: Column(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(10),
+            child: TextField(
+              decoration: InputDecoration(
+                labelText: "Pesquise aqui",
+                labelStyle: TextStyle(color: Colors.white),
+                border: OutlineInputBorder(),
+              ),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
