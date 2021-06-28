@@ -5,6 +5,7 @@ void main() {
   runApp(MaterialApp(
     home: HomePage(),
     theme: ThemeData(
+        hintColor: Colors.white,
         primaryColor: Colors.white,
         cursorColor: Colors.white,
         inputDecorationTheme: InputDecorationTheme(
